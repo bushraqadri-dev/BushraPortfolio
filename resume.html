@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bushra Anis Qadri | Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .resume-page {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 40px;
+            background: #fff;
+            border: 1px solid #e8def8;
+            border-radius: 20px;
+            box-shadow: 0 12px 35px rgba(105, 75, 155, 0.08);
+        }
+        .resume-page h1 {
+            color: #6543a5;
+            margin-bottom: 8px;
+        }
+        .resume-page h2 {
+            color: #6543a5;
+            font-size: 20px;
+            margin-top: 28px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #eee6f8;
+        }
+        .resume-page p, .resume-page li {
+            color: #514b5e;
+            line-height: 1.8;
+        }
+        .resume-page a {
+            color: #7953bd;
+            text-decoration: none;
+        }
+        .resume-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 24px;
+        }
+        .resume-back {
+            display: inline-block;
+            margin: 24px 0 0  max(20px, calc((100% - 900px) / 2));
+            color: #7953bd;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .resume-page {
+                margin: 24px 16px;
+                padding: 24px;
+            }
+        }
+        @media print {
+            body { background: #fff !important; }
+            .resume-back, .resume-actions { display: none !important; }
+            .resume-page {
+                margin: 0;
+                padding: 10px;
+                border: none;
+                box-shadow: none;
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="resume-back">← Back to Portfolio</a>
+
+    <main class="resume-page">
+        <header>
+            <h1>Bushra Anis Qadri</h1>
+            <p>BCA Graduate | Python | SQL | Data Analysis</p>
+            <p>Solapur, Maharashtra</p>
+            <p>
+                <a href="mailto:bushraqadri359@gmail.com">bushraqadri359@gmail.com</a>
+                | <a href="tel:8421621074">8421621074</a>
+            </p>
+            <p>
+                <a href="https://www.linkedin.com/in/bushraqadri" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                | <a href="https://github.com/bushraqadri-dev" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </p>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p>
+                BCA graduate with knowledge of Python, SQL, MySQL, and Pandas.
+                Developed an AI Job Application Assistant that compares resume
+                skills with job description requirements.
+            </p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <p>Python · SQL · MySQL · Pandas · Git · GitHub</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <p><strong>Bachelor of Computer Applications (BCA)</strong></p>
+            <p>Abhijit Kadam Institute, Solapur</p>
+            <p>CGPA: 8.38 | Percentage: 78.70%</p>
+        </section>
+
+        <section>
+            <h2>Project</h2>
+            <p><strong>AI Job Application Assistant</strong></p>
+            <p>
+                An application that analyzes a resume against a job description
+                and identifies matching and missing skills.
+            </p>
+            <p>
+                <a href="https://github.com/bushraqadri-dev/AIJobAssistant"
+                   target="_blank" rel="noopener noreferrer">
+                    View Project on GitHub ↗
+                </a>
+            </p>
+        </section>
+
+        <div class="resume-actions">
+            <button class="btn btn-primary" onclick="window.print()">
+                Print / Save as PDF
+            </button>
+            <a href="index.html" class="btn btn-secondary">Back to Portfolio</a>
+        </div>
+    </main>
+
+</body>
+</html>
